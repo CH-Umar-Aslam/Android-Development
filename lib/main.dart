@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'maximum_bid.dart'; // Import your MaximumBid class here
 
 void main() {
   runApp(const MyApp());
@@ -11,47 +10,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // disable the default debug banner
       debugShowCheckedModeBanner: false,
-      /* uncomment the the multiline comment to see task 1
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // setting theme of whole website
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orange),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      */
-      // Task 2
-      title: 'Flutter Bidding Page',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        textTheme: const TextTheme(
-          titleLarge: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold), // Updated to titleLarge
-          headlineMedium: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.bold), // Updated to headlineMedium
-        ),
-      ),
-      home: MaximumBid(),
+      title: 'Flutter App',
+      home: const HomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   int _counter = 0;
 
+  // Increment counter function
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -62,38 +38,64 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: const Text('Simple Counter & Bid'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Theme(
-              data: Theme.of(context).copyWith(
-                cardColor: Colors.green.shade300,
-              ),
-              child: const Card(
-                  child: Text('lorem ipsum dolor sit amet, consectetur adipis',
-                      style: TextStyle(
-                        backgroundColor: Colors.green,
-                      ))),
+            Text('Counter: $_counter'),
+            const SizedBox(height: 16),
+            FloatingActionButton(
+              onPressed: _incrementCounter,
+              tooltip: 'Increment Counter',
+              child: const Icon(Icons.add),
             ),
-            const Text(
-              'you have pushed counter following times',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            const SizedBox(height: 32),
+            MaximumBid(),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+    );
+  }
+}
+
+class MaximumBid extends StatefulWidget {
+  @override
+  _MaximumBidState createState() => _MaximumBidState();
+}
+
+class _MaximumBidState extends State<MaximumBid> {
+  double _currentBid = 0;
+
+  void _increaseBid() {
+    setState(() {
+      _currentBid += 50;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Theme(
+          data: Theme.of(context).copyWith(
+            cardColor: Colors.green.shade300,
+          ),
+          child: const Card(
+              child: Text('custom card color change',
+                  style: TextStyle(
+                    backgroundColor: Colors.green,
+                  ))),
+        ),
+        Text('Current Bid: \$${_currentBid.toStringAsFixed(2)}'),
+        const SizedBox(height: 16),
+        ElevatedButton(
+          onPressed: _increaseBid,
+          child: const Text('Increase Bid'),
+        ),
+      ],
     );
   }
 }
