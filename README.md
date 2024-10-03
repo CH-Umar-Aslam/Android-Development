@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-In this code I have developed two screens as a student of Mobile app development I learned how to use pub packeges do routing in flutter app also I learned how to make componets to make code reusable.
+In this code I have developed two screens as a student of Mobile app development I learned how to use pub packeges implemented routing in flutter app also I learned how to make components to make code reusable.
 
 ## Getting Started
 
