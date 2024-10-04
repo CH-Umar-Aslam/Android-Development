@@ -56,7 +56,7 @@ License
 This project is licensed under the MIT License.
 Contact
 
-For any questions or feedback, feel free to reach out to me at [your-email@example.com].
+For any questions or feedback, feel free to reach out to me at chumaraslam22@gmail.com.
 Additional Notes
 
     Email Address: Don’t forget to replace [your-email@example.com] with your actual email address.
@@ -69,7 +69,8 @@ Additional Notes
       assets:
         - assets/img.png
         - assets/img_1.png
+        - assets/img_2.png
+        - assets/img_3.png
 
-    Repository Visibility: Ensure your repository is public if you want others to access it.
 
-Feel free to customize any part of the README further. If you have any more questions or need additional assistance, just let me know!
+ 
