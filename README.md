@@ -27,13 +27,13 @@ Installation
 
     bash
 
-git clone https://github.com/CH-Umar-Aslam/Mobile-App-Development.git
+git clone https://github.com/CH-Umar-Aslam/Android-Development/edit/Assignment2
 
 Navigate to the project directory:
 
 bash
 
-cd Mobile-App-Development
+cd Assignment2
 
 Install dependencies:
 
