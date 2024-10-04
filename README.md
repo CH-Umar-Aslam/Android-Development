@@ -8,6 +8,7 @@ Features
     Responsive design using Flutter
 
 Screenshots
+![Product List Screenshot](assets/img_1.png)
 
 Getting Started
 Prerequisites
