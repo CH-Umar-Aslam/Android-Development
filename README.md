@@ -7,8 +7,11 @@ Features
     Navigate to a detailed view of each product
     Responsive design using Flutter
 
-Screenshots
-![Product List Screenshot](assets/img_1.png)
+Output
+![Product Detail Screenshot](assets/screen_1.png)
+![Screen 2](assets/screen_2.png)
+![Screen 3](assets/screen_3.png)
+
 
 Getting Started
 Prerequisites
