@@ -27,7 +27,7 @@ Installation
 
     bash
 
-git clone https://github.com/CH-Umar-Aslam/Android-Development/Assignment2
+git clone https://github.com/CH-Umar-Aslam/Android-Development/edit/Assignment2/
 
 Navigate to the project directory:
 
