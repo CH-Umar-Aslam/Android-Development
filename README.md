@@ -1,6 +1,7 @@
 Flutter Product List App
 
 Welcome to the Flutter Product List App! This application showcases a list of products where users can click on an item to view its image and details.
+
 Features
 
     Display a list of products
@@ -60,12 +61,10 @@ Acknowledgments
 
 
 Contact
-
 For any questions or feedback, feel free to reach out to me at chumaraslam22@gmail.com.
+
+
 Additional Notes
-
-    Email Address: Don’t forget to replace [your-email@example.com] with your actual email address.
-
     Asset Declaration: Make sure your assets are declared in pubspec.yaml:
 
     yaml
