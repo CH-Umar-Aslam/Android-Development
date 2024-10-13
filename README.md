@@ -57,9 +57,8 @@ Acknowledgments
     Thank you to my instructor for their guidance throughout this project.
     Special thanks to the Flutter community for their resources and support.
 
-License
 
-This project is licensed under the MIT License.
+
 Contact
 
 For any questions or feedback, feel free to reach out to me at chumaraslam22@gmail.com.
